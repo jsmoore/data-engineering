@@ -1,0 +1,10 @@
+
+<%= link_to "Import file", new_import_path %>
+<ul>
+  <% @imports.each do |import| %>
+    <li>
+      <%= link_to import.file_name, import_path(import) %>
+    </li>
+  <% end %>
+</ul>
+
